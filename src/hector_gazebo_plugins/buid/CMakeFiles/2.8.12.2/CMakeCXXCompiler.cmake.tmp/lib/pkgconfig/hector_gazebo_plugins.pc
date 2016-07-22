@@ -1,0 +1,8 @@
+prefix=/home/hackathon/ROSCock/src/hector_gazebo_plugins/build/devel
+
+Name: hector_gazebo_plugins
+Description: Description of hector_gazebo_plugins
+Version: 0.3.8
+Cflags: -I/home/hackathon/ROSCock/src/hector_gazebo_plugins/build/devel/include -I/home/hackathon/ROSCock/src/hector_gazebo_plugins/include
+Libs: -L/home/hackathon/ROSCock/src/hector_gazebo_plugins/build/devel/lib 
+Requires: roscpp std_msgs geometry_msgs nav_msgs tf message_runtime

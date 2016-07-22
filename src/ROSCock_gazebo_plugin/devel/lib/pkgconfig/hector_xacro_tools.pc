@@ -1,0 +1,8 @@
+prefix=/home/admin/ROSCock/src/ROSCock_gazebo_plugin/devel
+
+Name: hector_xacro_tools
+Description: Description of hector_xacro_tools
+Version: 0.3.2
+Cflags: 
+Libs: -L/home/admin/ROSCock/src/ROSCock_gazebo_plugin/devel/lib 
+Requires: 

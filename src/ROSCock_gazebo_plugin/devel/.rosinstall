@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/admin/ROSCock/src/ROSCock_gazebo_plugin/devel/setup.sh

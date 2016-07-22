@@ -1,0 +1,28 @@
+#include <ros/ros.h>
+#include <std_msgs/Float32.h>
+
+#include <sstream>
+#include <iostream>
+#include <fstream>
+
+float topkek;
+
+void callback123(const std_msgs::Float32::ConstPtr& msg)
+{
+  topkek = (float)msg->data;
+  //std::cout << topkek << "\n";
+}
+
+int main(int argc, char ** argv)
+{
+  std::ofstream topkef;
+  topkef.open("/tmp/topkek");
+  float *topkep = &topkek;
+  std::cout << topkep << "\n";
+  topkef << topkep << "\n";
+  topkef.close();
+  ros::init(argc, argv, "IkeaListener");
+  ros::NodeHandle n;
+  ros::Subscriber sub = n.subscribe("/cock_control", 1000, callback123);
+  ros::spin();
+}

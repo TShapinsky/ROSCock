@@ -1,0 +1,35 @@
+# pack-refs with: peeled fully-peeled 
+2f6c218eb5f1fe309227b6da1302ebced76e8f7f refs/remotes/origin/add_components_description
+7580f6fe8821ba2d6dbeed2074a4197e58e9094d refs/remotes/origin/argos
+d0852fce0b90615274647165ad6225f2e6db474d refs/remotes/origin/catkin
+e6d8e418d90e04fa4d9391e4b4fef04cb54443cf refs/remotes/origin/electric
+b5c1e052c3e873203c58a612176cdfe76fa60809 refs/remotes/origin/fuerte
+b5c1e052c3e873203c58a612176cdfe76fa60809 refs/remotes/origin/fuerte-devel
+4fd7518e5518dd96d766bc2566362c870343d451 refs/remotes/origin/gpu_lidar_indigo
+dfee6e91d029d4924b07b22ea5bc3fdba8340cc9 refs/remotes/origin/groovy
+9f62ea02a8ecd5b3a057300b49804bd074445a9a refs/remotes/origin/groovy-devel
+ba17b96515e9be2cf14d016c2e24b18b63050f64 refs/remotes/origin/hector_multisensor_head
+3bfb87583e03c97c4fdbf5f17b108489ae6fa931 refs/remotes/origin/hydra-setup
+3bfb87583e03c97c4fdbf5f17b108489ae6fa931 refs/remotes/origin/hydra_setup
+59b4854efae2b699c9ac78cc9039ec2447ee19fd refs/remotes/origin/hydro-devel
+72dce1f36549790a6116b37223b3271121d77c9e refs/remotes/origin/indigo-devel
+a4370f80486b10f0b26776127fb43790ddc5b324 refs/remotes/origin/jade-devel
+a4370f80486b10f0b26776127fb43790ddc5b324 refs/remotes/origin/kinetic-devel
+57d7a25756af77265cfd73298fa5d326ea73b9b1 refs/remotes/origin/lidar_calibration
+6e604b4c309e71884ae743bc774447b1d78edd69 refs/remotes/origin/multisensor_head
+7d3c83b4801e04ac53142640ca374ac41c95c59b refs/remotes/origin/no_gpu_ray_sensor
+cc62e778d38c18885c7423d2462b8eee630fef69 refs/remotes/origin/thormang3
+87533f00cf17a061c3fde54de68769831c076cc8 refs/tags/0.3.1
+86dc4a10434cb5dd0d9f315e255104a9d6bf158d refs/tags/0.3.2
+1825fedeebbd4bfd4ec8bb45b36360e1c7e70fad refs/tags/0.4.0
+ece86f8bdda3387bba41ddcb5973e690013cb7f6 refs/tags/0.4.1
+a4370f80486b10f0b26776127fb43790ddc5b324 refs/tags/0.4.2
+e7d8dae849f64112d0e800a718620f4d2e34f867 refs/tags/hector_models-0.1.0
+^2455fce9a63dffa02f18e70ea19c370df1055cf0
+195f1f74b6e02293c95ba25900dcd9b6d90d9b2c refs/tags/hector_models-0.1.1
+^08a372d547ed6232a6de2c5cd29ab919bee71934
+92719e32748b84a2ded41cfdd749833868c05ab9 refs/tags/hector_models-0.1.2
+b5c1e052c3e873203c58a612176cdfe76fa60809 refs/tags/hector_models-0.1.3
+cc85fb0bf8ddd32470c6428ce62686fbce2f44af refs/tags/hector_models-0.2.2
+dfee6e91d029d4924b07b22ea5bc3fdba8340cc9 refs/tags/hector_models-0.2.3
+d0852fce0b90615274647165ad6225f2e6db474d refs/tags/hector_models-0.3.0

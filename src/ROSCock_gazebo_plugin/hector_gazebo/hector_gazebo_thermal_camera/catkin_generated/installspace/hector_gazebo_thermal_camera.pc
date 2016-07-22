@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: hector_gazebo_thermal_camera
+Description: Description of hector_gazebo_thermal_camera
+Version: 0.3.8
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: nodelet image_transport dynamic_reconfigure driver_base gazebo_plugins

@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+
+import sys
+import rospy
+from gazebo_msgs.srv import *
+
+def apply_joint_effort(joint_name,effort):
+    rospy.wait_for_service('apply_joint_effort')
+    try:
+        apply_joint_effort = rospy.ServiceProxy('apply_joint_effort', ApplyJointEffort)
+        duration = rospy.Duration.from_sec(-1)
+        start_time = rospy.Duration.from_sec(rospy.get_time())
+        resp1 = apply_joint_effort(joint_name,effort, start_time=rospy.get_rostime(), duration)
+        return resp1.success
+    except rospy.ServiceException, e:
+        print "Service call failed: %s"%e
+
+def usage():
+    return "%s effort]"%sys.argv[0]
+
+if __name__ == "__main__":
+    resp = apply_joint_effort("wheel_read_left_spin",1.0)

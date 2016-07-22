@@ -1,0 +1,8 @@
+prefix=/home/admin/ROSCock/src/ROSCock_gazebo_plugin/devel
+
+Name: hector_gazebo_worlds
+Description: Description of hector_gazebo_worlds
+Version: 0.3.8
+Cflags: 
+Libs: -L/home/admin/ROSCock/src/ROSCock_gazebo_plugin/devel/lib 
+Requires: 

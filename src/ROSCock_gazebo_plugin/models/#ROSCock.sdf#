@@ -1,0 +1,132 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+      <model name="cock">
+	<link name="cock-link">
+	  <pose>.0 0 .15 0 0 0</pose>
+	<gravity>false</gravity>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1.0</mass>
+        </inertial>
+        <!--<collision name="penetration-radius">
+          <geometry>
+            <box>
+	      <size>.3 .3 .3</size>
+	    </box>
+          </geometry>
+        </collision>-->
+        <visual name="cock-visual">
+          <geometry>
+            <box>
+	      <size>.3 .3 .3</size>
+	    </box>
+          </geometry>
+        </visual>
+      </link>
+      <!--<link name="front_sonar_link">
+	<gravity>false</gravity>
+	<frame name="cock-link"/>
+	<sensor type="sonar" name="cock_ray_left">
+        <always_on>true</always_on>
+        <update_rate>16.1</update_rate>
+	<topic>/sensor_msgs/Cock_left</topic>
+        <pose>0 0 .4 0 3.14 0 </pose>
+        <visualize>true</visualize>
+        <sonar>
+          <min>.2</min>
+	  <max>7.5</max>
+	  <radius>1</radius>
+        </sonar>
+	<plugin name="sock-link-left" filename="SonarSensor.so"/>
+	</sensor>
+	<!--<sensor type="ray" name="cock_ray_right">
+        <always_on>true</always_on>
+        <update_rate>16.1</update_rate>
+        <pose>0 0 .4 0 2.0 -2.8</pose>
+        <visualize>false</visualize>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>100</samples>
+              <resolution>.1</resolution>
+              <min_angle>-7.5</min_angle>
+              <max_angle>7.5</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>10</samples>
+             <resolution>.1</resolution>
+              <min_angle>-.1</min_angle>
+              <max_angle>.1</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>.2</min>
+            <max>7.5</max>
+            <resolution>0.01</resolution>
+          </range>
+        </ray>
+	<plugin name="gazebo_ros_cock_controller" filename="libhector_gazebo_ros_sonar.so">
+          <gaussianNoise>0.005</gaussianNoise>
+          <topicName>sensor_msgs/Cocks_right</topicName>
+          <frameId>front_sonar_link</frameId>
+        </plugin>
+	</sensor>
+<sensor type="ray" name="cock_ray_center">
+        <always_on>true</always_on>
+        <update_rate>16.1</update_rate>
+        <pose>0 0 .4 0 2.0 3.14</pose>
+        <visualize>false</visualize>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>100</samples>
+              <resolution>.1</resolution>
+              <min_angle>-7.5</min_angle>
+              <max_angle>7.5</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>10</samples>
+              <resolution>.1</resolution>
+              <min_angle>-.1</min_angle>
+              <max_angle>.1</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>.2</min>
+            <max>7.5</max>
+            <resolution>0.01</resolution>
+          </range>
+        </ray>
+	<plugin name="gazebo_ros_cock_controller" filename="libhector_gazebo_ros_sonar.so">
+          <gaussianNoise>0.005</gaussianNoise>
+          <topicName>sensor_msgs/Cocks_center</topicName>
+          <frameId>front_sonar_link</frameId>
+        </plugin>
+	</sensor>-->
+	<!--<collision name="front_sonar_collision">
+	  <geometry>
+	    <box>
+	      <size>.05 .05 .05</size>
+	    </box>
+	  </geometry>
+	</collision>-->
+	<visual name="front_sonar_visual">
+	  <geometry>
+	    <box>
+	      <size>.05 .05 .05</size>
+	    </box>
+	  </geometry>
+	</visual>
+      </link>
+      <plugin name="model_push" filename="libmodel_push.so"></plugin>
+    </model>
+    
+
+</sdf>

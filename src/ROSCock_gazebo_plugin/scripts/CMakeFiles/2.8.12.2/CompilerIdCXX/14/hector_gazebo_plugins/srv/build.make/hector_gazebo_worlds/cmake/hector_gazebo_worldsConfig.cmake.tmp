@@ -1,0 +1,8 @@
+prefix=/home/hackathon/ROSCock/install
+
+Name: hector_gazebo_worlds
+Description: Description of hector_gazebo_worlds
+Version: 0.3.8
+Cflags: 
+Libs: -L/home/hackathon/ROSCock/install/lib 
+Requires: 

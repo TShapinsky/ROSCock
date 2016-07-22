@@ -1,0 +1,1 @@
+<xacro:sonar_sensor name="cock" update_rate=60 min_range=10 max_range=100 field_of_view=30 ray_count=4/>
